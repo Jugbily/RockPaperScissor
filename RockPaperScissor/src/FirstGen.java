@@ -3,7 +3,7 @@ public class FirstGen {
 
 	public static void main(String[] args) {
 		Scanner console = new Scanner(System.in);
-		System.out.print("Welcome! Please pick between Rock, Paper and Scissor. ");
+		System.out.print("Welcome! Please pick between Rock, Paper, and Scissor. ");
 		
 		String humanChoice = console.next();
 		String computerChoice = computerChoiceGenerator();
