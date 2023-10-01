@@ -14,7 +14,7 @@ public class FirstGen {
 		if (!(humanChoice.equals("rock")) || (humanChoice.equals("paper")) || (humanChoice.equals("scissor"))) {
 			System.out.print("Restart the program and only choose between rock, paper and scissor.");
 		} else {
-			System.out.println("The computer picked " + computerChoice + ".");
+			System.out.println("You Picked " + humanChoice + " and the computer picked " + computerChoice + ".");
 
 			winDrawLoss(computerChoice, humanChoice);
 		}
