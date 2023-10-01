@@ -10,12 +10,12 @@ public class FirstGen {
 		String computerChoice = computerChoiceGenerator();
 
 		humanChoice = humanChoice.toLowerCase();
+		computerChoice = computerChoice.toLowerCase();
 
 		if (!(humanChoice.equals("rock")) || (humanChoice.equals("paper")) || (humanChoice.equals("scissor"))) {
 			System.out.print("Restart the program and only choose between rock, paper and scissor.");
 		} else {
-			System.out.println("You Picked " + humanChoice + " and the computer picked " + computerChoice + ".");
-
+			System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
 			winDrawLoss(computerChoice, humanChoice);
 		}
 	}
@@ -30,31 +30,31 @@ public class FirstGen {
 	
 	// Calculate the possibility and tells you your results.
 	public static void winDrawLoss(String computerChoice, String humanChoice) {
-		if (computerChoice.equals("Rock") && humanChoice.equals("rock")) {
+		if (computerChoice.equals("rock") && humanChoice.equals("rock")) {
 			System.out.print("It is a draw!");
 		}
-		if (computerChoice.equals("Rock") && humanChoice.equals("paper")) {
+		if (computerChoice.equals("rock") && humanChoice.equals("paper")) {
 			System.out.print("You won!");
 		}
-		if (computerChoice.equals("Rock") && humanChoice.equals("scissor")) {
+		if (computerChoice.equals("rock") && humanChoice.equals("scissor")) {
 			System.out.print("You lost...");
 		}
-		if (computerChoice.equals("Paper") && humanChoice.equals("rock")) {
+		if (computerChoice.equals("paper") && humanChoice.equals("rock")) {
 			System.out.print("You lost...");
 		}
-		if (computerChoice.equals("Paper") && humanChoice.equals("paper")) {
+		if (computerChoice.equals("paper") && humanChoice.equals("paper")) {
 			System.out.print("It is a draw!");
 		}
-		if (computerChoice.equals("Paper") && humanChoice.equals("scissor")) {
+		if (computerChoice.equals("paper") && humanChoice.equals("scissor")) {
 			System.out.print("You won!");
 		}
-		if (computerChoice.equals("Scissor") && humanChoice.equals("rock")) {
+		if (computerChoice.equals("scissor") && humanChoice.equals("rock")) {
 			System.out.print("You won!");
 		}
-		if (computerChoice.equals("Scissor") && humanChoice.equals("paper")) {
+		if (computerChoice.equals("scissor") && humanChoice.equals("paper")) {
 			System.out.print("You lost...");
 		}
-		if (computerChoice.equals("Scissor") && humanChoice.equals("scissor")) {
+		if (computerChoice.equals("scissor") && humanChoice.equals("scissor")) {
 			System.out.print("It is a draw!");
 		}
 	}
