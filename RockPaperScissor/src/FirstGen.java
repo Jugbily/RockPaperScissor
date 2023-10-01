@@ -1,4 +1,5 @@
 import java.util.Scanner;
+// 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
 public class FirstGen {
 
 	public static void main(String[] args) {
