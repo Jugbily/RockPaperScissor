@@ -8,7 +8,7 @@ public class FirstGen {
 		
 		String humanChoice = console.next();
 		String computerChoice = computerChoiceGenerator();
-		System.out.println("The computer picked " + computerChoice + ". ");
+		System.out.println("The computer picked " + computerChoice + ".");
 		
 		winDrawLoss(computerChoice, humanChoice);
 	}
