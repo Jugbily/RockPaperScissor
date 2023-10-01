@@ -15,7 +15,7 @@ public class FirstGen {
 	public static void intro(Scanner console) {
 		System.out.print("Welcome! Please state your name in order to play. ");
 		String humanName = console.nextLine();
-		System.out.print("Hello, " + humanName + " please pick between Rock, Paper, and Scissor. ");
+		System.out.print("Hello " + humanName + ", please pick between Rock, Paper, and Scissor. ");
 	}
 	
 	public static void winDrawLoss(String computerChoice, String humanChoice) {
