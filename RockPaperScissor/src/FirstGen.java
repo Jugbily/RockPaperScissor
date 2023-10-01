@@ -4,13 +4,19 @@ public class FirstGen {
 
 	public static void main(String[] args) {
 		Scanner console = new Scanner(System.in);
-		System.out.print("Welcome! Please pick between Rock, Paper, and Scissor. ");
+		intro(console);
 		
 		String humanChoice = console.next();
 		String computerChoice = computerChoiceGenerator();
-		
 		System.out.println("The computer picked " + computerChoice + ".");
+		
 		winDrawLoss(computerChoice, humanChoice);
+	}
+	
+	public static void intro(Scanner console) {
+		System.out.print("Welcome! Please state your name in order to play. ");
+		String humanName = console.nextLine();
+		System.out.print("Hello " + humanName + " please pick between Rock, Paper, and Scissor. ");
 	}
 	
 	public static void winDrawLoss(String computerChoice, String humanChoice) {
