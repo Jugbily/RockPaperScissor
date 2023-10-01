@@ -13,7 +13,7 @@ public class FirstGen {
 		computerChoice = computerChoice.toLowerCase();
 
 		if (!(humanChoice.equals("rock")) || (humanChoice.equals("paper")) || (humanChoice.equals("scissor"))) {
-			System.out.print("Restart the program and only choose between rock, paper and scissor.");
+			System.out.print("Restart the program, \"" + humanChoice + "\" is not a valid charater.");
 		} else {
 			System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
 			winDrawLoss(computerChoice, humanChoice);
@@ -25,7 +25,7 @@ public class FirstGen {
 		System.out.print("Welcome! Please state your name in order to play. ");
 		String humanName = console.nextLine();
 		System.out.print("Hello " + humanName + ", "
-				+ "please pick between Rock, Paper, and Scissor. (Only the first word counts) ");
+				+ "please pick between rock, paper, and scissor. (Only the first word counts) ");
 	}
 	
 	// Calculate the possibility and tells you your results.
