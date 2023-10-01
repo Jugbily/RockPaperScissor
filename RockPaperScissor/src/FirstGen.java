@@ -1,5 +1,5 @@
 import java.util.Scanner;
-// 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
+// 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
 public class FirstGen {
 
 	public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class FirstGen {
 		
 		String humanChoice = console.next();
 		String computerChoice = computerChoiceGenerator();
-		System.out.println("The computer picked " + computerChoice + ".");
+		System.out.println("The computer picked " + computerChoice + ". ");
 		
 		winDrawLoss(computerChoice, humanChoice);
 	}
