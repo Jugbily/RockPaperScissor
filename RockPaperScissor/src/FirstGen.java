@@ -19,7 +19,7 @@ public class FirstGen {
 			humanChoice = humanChoice.toLowerCase();
 			computerChoice = computerChoice.toLowerCase();
 
-			if (!(humanChoice.equals("rock")) || (humanChoice.equals("paper")) || (humanChoice.equals("scissor"))) {
+			if (!(humanChoice.equals("rock") || humanChoice.equals("paper") || humanChoice.equals("scissor"))) {
 				System.out.print("Restart the program, \"" + humanChoice + "\" is not a valid charater.");
 			} else {
 				System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
