@@ -4,19 +4,27 @@ public class FirstGen {
 
 	public static void main(String[] args) {
 		Scanner console = new Scanner(System.in);
-		intro(console);
-
-		String humanChoice = console.next();
-		String computerChoice = computerChoiceGenerator();
-
-		humanChoice = humanChoice.toLowerCase();
-		computerChoice = computerChoice.toLowerCase();
-
-		if (!(humanChoice.equals("rock")) || (humanChoice.equals("paper")) || (humanChoice.equals("scissor"))) {
-			System.out.print("Restart the program, \"" + humanChoice + "\" is not a valid charater.");
+		System.out.print("Please type the password to play. ");
+		String humanPassword = console.next();
+		console.nextLine();
+		if (!(humanPassword.equals("password"))) {
+			System.out.print("The password in incorrect, please restart the program.");
 		} else {
-			System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
-			winDrawLoss(computerChoice, humanChoice);
+
+			intro(console);
+
+			String humanChoice = console.next();
+			String computerChoice = computerChoiceGenerator();
+
+			humanChoice = humanChoice.toLowerCase();
+			computerChoice = computerChoice.toLowerCase();
+
+			if (!(humanChoice.equals("rock")) || (humanChoice.equals("paper")) || (humanChoice.equals("scissor"))) {
+				System.out.print("Restart the program, \"" + humanChoice + "\" is not a valid charater.");
+			} else {
+				System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
+				winDrawLoss(computerChoice, humanChoice);
+			}
 		}
 	}
 
@@ -27,7 +35,7 @@ public class FirstGen {
 		System.out.print("Hello " + humanName + ", "
 				+ "please pick between rock, paper, and scissor. (Only the first word counts) ");
 	}
-	
+
 	// Calculate the possibility and tells you your results.
 	public static void winDrawLoss(String computerChoice, String humanChoice) {
 		if (computerChoice.equals("rock") && humanChoice.equals("rock")) {
@@ -58,6 +66,7 @@ public class FirstGen {
 			System.out.print("It is a draw!");
 		}
 	}
+
 	// Selects a random number and randomly picks a choice.
 	public static String computerChoiceGenerator() {
 		double randomNum = Math.random();
