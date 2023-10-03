@@ -1,13 +1,15 @@
 import java.util.Scanner;
 
 public class FirstGen {
-
+	public static final String password = "123";
+	
 	public static void main(String[] args) {
 		Scanner console = new Scanner(System.in);
+		
 		System.out.print("Please type the password to play. ");
 		String humanPassword = console.next();
 		console.nextLine();
-		if (!(humanPassword.equals("password"))) {
+		if (!(humanPassword.equals(password))) {
 			System.out.print("The password in incorrect, please restart the program.");
 		} else {
 
