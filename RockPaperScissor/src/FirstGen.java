@@ -28,8 +28,8 @@ public class FirstGen {
 						System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
 						winDrawLoss(computerChoice, humanChoice);
 					} else {
-						System.out.println("You picked " + humanChoice + " and the computer picked " + computerChoice + ".");
-						winDrawLoss(computerChoice, humanChoice);
+						System.out.println("You typed \"" + humanChoice + "\" which is invalid, please pick between rock, paper and scissors");
+						
 					}
 			}
 			System.out.print("Type 1 if you want to play again.");
@@ -47,6 +47,9 @@ public class FirstGen {
 		System.out.print("Hello " + humanName + ", "
 				+ "please pick between rock, paper, and scissors. (Only the first word counts) ");
 	}
+	
+	//public static void 
+	
 
 	// Calculate the possibility and tells you your results.
 	public static void winDrawLoss(String computerChoice, String humanChoice) {
