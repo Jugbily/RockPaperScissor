@@ -1,7 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
 
-//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
 public class FirstGen {
 
 	public static void main(String[] args) {
