@@ -45,9 +45,6 @@ public class FirstGen {
 		System.out.println("Hello " + humanName + ", "
 				+ "please pick between rock, paper, and scissors. (Only the first word counts) ");
 		System.out.print("Your Choice: ");
-		String humanChoice = console.next();
-		console.nextLine();
-		String computerChoice = choiceGen();
 	}
 
 	// Calculate the possibility and tells you your results.
